@@ -13,45 +13,58 @@ body {
   font-family: 'Droid Sans', sans-serif;
 }
 
+.thanksgiving-banner {
+  text-decoration: none;
+  display: inline-block;
+}
+
 .main {
+  width: 615px;
+  height:200px;
   background: url("images/thanksgiving.jpg") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height:200px;
-  width: 615px;
 }
 
 .main .opaque-layer {
-  background-color: rgba(255, 255, 255, 0.9);
   width: 280px;
   height: 200px;
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 .main .opaque-layer .innards {
-  padding: 20px 25px 20px 25px;
+  padding: 20px 10px 0 10px;
 }
 
 .main .opaque-layer .innards hr {
   margin: 0;
-  border: 0.5px solid #EBBF3A;
+  border-top: 1px;
+  border-bottom: 0;
+  border-right: 0;
+  border-left: 0;
+  border-style: solid;
+  border-color: #EBBF3A;
 }
 
-.main .opaque-layer .innards p {
-  font-size: 20px;
+.main .opaque-layer .innards .tagline {
+  font-size: 18px;
   text-align: center;
   color: #3C4049;
+  margin: 10px;
 }
 
 .main .opaque-layer .innards p .thanks {
   font-size: 33px;
 }
+.main .opaque-layer .innards p .survival {
+  font-size: 24px;
+}
 
-.main .opaque-layer .innards a {
+.main .opaque-layer .innards .go {
   color: #FD380D;
-  text-decoration: none;
-  padding: 2px;
+  padding: 3px;
   border: 2px solid #FD380D;
   background-color: #FFFFFF;
   font-size: 22px;
@@ -60,10 +73,11 @@ body {
   width: 33px;
 }
 
-.main .opaque-layer .innards a:hover {
+.thanksgiving-banner:hover > .main .opaque-layer .innards .go {
   color: #FFFFFF;
   background-color: #FD380D;
 }
+
 @media(max-width: 630px) {
   .main {
     background-image: url("images/thanksgiving.jpg");
