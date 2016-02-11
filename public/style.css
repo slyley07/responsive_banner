@@ -1,0 +1,76 @@
+/*As a first step in our evaluation process, I'd like to have you convert a static Thanksgiving promo image (http://static.seriouseats.com/1/braestar/live/pages/thanksgiving/promo-footer.jpg) into responsive html and css.
+
+You'll find the promo directly after the entry body on relative Thanksgiving content, like this: http://www.seriouseats.com/2015/11/how-thanksgiving-killed-my-restaurant-career.html (searching for 'Nov 24' should jump right to it). The background image used in the current promo is accessible here: http://static.seriouseats.com/1/braestar/live/pages/thanksgiving/20150923-Thanksgiving-spread-vicky-wasik-001.jpg.  Don't feel restricted to create an _exact_ duplicate of the promo -- rather, I'd like to see a responsive version that works at our breakpoints.
+
+For QA purposes, it may be helpful to know that 52% of our audience accesses the site on a mobile device, mostly on iOS.  Traffic is split fairly evenly between Chrome (42%) and Safari (39%), but we also support Firefox (6%) and IE (5%, IE9 and greater).  Your results should be stored in a public Github repository on your account.  When submitting your results also include a brief description of how you approached the problem.  What tools did you use?  What was your workflow?  What, if any, challenges did you over come?  How did you approach browser/device testing?
+
+Let me know if you have any questions about the exercise or otherwise -- I look forward to seeing the results.*/
+
+
+body {
+  min-width: 320px;
+  margin: 0;
+  font-family: 'Droid Sans', sans-serif;
+}
+
+.main {
+  background: url("images/thanksgiving.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height:200px;
+  width: 615px;
+}
+
+.main .opaque-layer {
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 280px;
+  height: 200px;
+}
+
+.main .opaque-layer .innards {
+  padding: 20px 25px 20px 25px;
+}
+
+.main .opaque-layer .innards hr {
+  margin: 0;
+  border: 0.5px solid #EBBF3A;
+}
+
+.main .opaque-layer .innards p {
+  font-size: 20px;
+  text-align: center;
+  color: #3C4049;
+}
+
+.main .opaque-layer .innards p .thanks {
+  font-size: 33px;
+}
+
+.main .opaque-layer .innards a {
+  color: #FD380D;
+  text-decoration: none;
+  padding: 2px;
+  border: 2px solid #FD380D;
+  background-color: #FFFFFF;
+  font-size: 22px;
+  display: block;
+  margin: 10px auto;
+  width: 33px;
+}
+
+.main .opaque-layer .innards a:hover {
+  color: #FFFFFF;
+  background-color: #FD380D;
+}
+@media(max-width: 630px) {
+  .main {
+    background-image: url("images/thanksgiving.jpg");
+    height:200px;
+    width: 280px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 650px;
+  }
+}
