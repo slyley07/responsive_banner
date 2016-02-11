@@ -55,10 +55,11 @@ body {
   margin: 10px;
 }
 
-.main .opaque-layer .innards p .thanks {
+.main .opaque-layer .innards .tagline .thanks {
   font-size: 33px;
 }
-.main .opaque-layer .innards p .survival {
+
+.main .opaque-layer .innards .tagline .survival {
   font-size: 24px;
 }
 
@@ -78,13 +79,60 @@ body {
   background-color: #FD380D;
 }
 
-@media(max-width: 630px) {
+/* Media queries for scaling the images as the screen hits specific breakpoints */
+
+@media(max-width: 700px) {
   .main {
-    background-image: url("images/thanksgiving.jpg");
-    height:200px;
+    width: 530px;
+    height: 170px;
+    background-size: 530px;
+  }
+
+  .main .opaque-layer {
     width: 280px;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 650px;
+    height: 200px;
+  }
+
+  .main .opaque-layer .innards {
+    padding: 25px 10px 0 10px;
+  }
+
+  .main .opaque-layer .innards .tagline {
+    font-size: 15px;
+    margin: 8px;
+  }
+
+  .main .opaque-layer .innards .tagline .thanks {
+    font-size: 27px;
+  }
+
+  .main .opaque-layer .innards .tagline .survival {
+    font-size: 21px;
+  }
+
+  .main .opaque-layer .innards .go {
+    padding: 3px;
+    font-size: 18px;
+    margin: 10px auto;
+    width: 28px;
+  }
+}
+
+
+/* Media query for transforming the banner into a button on mobile devices*/
+@media(max-width: 550px) {
+  .main {
+    width: 240px;
+    height: 170px;
+  }
+
+  .main .opaque-layer {
+    width: 240px;
+    height: 170px;
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+
+  .main .opaque-layer .innards {
+    padding: 15px 10px 0 10px;
   }
 }
