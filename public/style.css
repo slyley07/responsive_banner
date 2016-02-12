@@ -79,6 +79,7 @@ body {
 .thanksgiving-banner:hover > .main .opaque-layer .innards .go {
   color: #FFFFFF;
   background-color: #FD380D;
+  transition-duration: 400ms;
 }
 
 /* Media queries for scaling the images as the screen hits specific breakpoints */
