@@ -1,3 +1,5 @@
+/* Bradley Showalter */
+
 /*As a first step in our evaluation process, I'd like to have you convert a static Thanksgiving promo image (http://static.seriouseats.com/1/braestar/live/pages/thanksgiving/promo-footer.jpg) into responsive html and css.
 
 You'll find the promo directly after the entry body on relative Thanksgiving content, like this: http://www.seriouseats.com/2015/11/how-thanksgiving-killed-my-restaurant-career.html (searching for 'Nov 24' should jump right to it). The background image used in the current promo is accessible here: http://static.seriouseats.com/1/braestar/live/pages/thanksgiving/20150923-Thanksgiving-spread-vicky-wasik-001.jpg.  Don't feel restricted to create an _exact_ duplicate of the promo -- rather, I'd like to see a responsive version that works at our breakpoints.
@@ -134,5 +136,10 @@ body {
 
   .main .opaque-layer .innards {
     padding: 15px 10px 0 10px;
+  }
+
+  .main .opaque-layer .innards .go {
+    color: #FFFFFF;
+    background-color: #FD380D;
   }
 }
