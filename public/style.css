@@ -83,8 +83,7 @@ body {
 }
 
 /* Media queries for scaling the images as the screen hits specific breakpoints */
-
-@media(max-width: 700px) {
+@media screen and (max-width: 768px) {
   .main {
     width: 530px;
     height: 170px;
@@ -123,7 +122,7 @@ body {
 
 
 /* Media query for transforming the banner into a button on mobile devices*/
-@media(max-width: 550px) {
+@media screen and (max-width: 550px) {
   .main {
     width: 240px;
     height: 170px;
